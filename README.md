@@ -47,9 +47,18 @@ Everything runs on-device with Apple's **Vision** and **Core ML** frameworks. Yo
 
 - A Mac with **Apple Silicon (M1 or later)**
 - **macOS 15 Sequoia** or later
-- **Xcode 26** or later (to build from source)
 
-### Build and run
+### Download
+
+<a href="https://github.com/ST10473732-DIEGO/OLIVE-UNLOCK/releases/latest/download/OliveUnlock.dmg"><img width="200" src=".github/assets/download-button.png" alt="Download Olive Unlock for Mac"></a>
+
+Open the `.dmg` file and drag **Olive Unlock** to `/Applications`, then open it.
+
+The first time you open it, macOS may say it can't verify the developer. If so, right-click the app in `/Applications`, choose **Open**, then click **Open** again.
+
+### Build from source
+
+You'll need **Xcode 26** or later.
 
 1. Clone the repository:
    ```bash
@@ -64,6 +73,8 @@ Everything runs on-device with Apple's **Vision** and **Core ML** frameworks. Yo
 4. Press **⌘R** to build and run.
 
 For permission prompts to behave the way they will for real use, copy the built `OliveUnlock.app` into `/Applications` and launch it from there, not from Xcode.
+
+To package your own `.dmg`, run `tools/make_dmg.sh`. It writes `build/OliveUnlock.dmg`.
 
 ## 🔐 Permissions
 
